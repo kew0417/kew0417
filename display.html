@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+    
+    * {
+        margin:0px;
+        padding:0px;
+
+    }
+        
+        #block {
+            width:500px;
+            padding:10px;
+            margin:20px 0 0 40px;
+            background-color:#eeeeee;
+            border:solid 1px #aaaaaa;
+            text-align:center;
+        }
+        #block li {
+            display:inline;
+        }
+        a:link {
+        color:#000000;
+        text-decoration:none;
+        }
+        a:visited {
+        color:#00ff00;
+        }
+        a:hover {
+        color:#ff0000;
+        font-weight:bold;
+        text-decoration:underline;
+        }
+        a:active {
+        color:#00ffff;
+        }
+    ul {
+        list-style-type:none;
+    }
+    #menu {
+        width:500px;
+        padding:10px;
+        margin:20px 0 0 40px;
+        background-color:#eeeeee;
+        border:solid 1px #aaaaaa;
+        text-align:center;
+    }
+    #menu li {
+        display:inline;
+    }
+    /*
+    a {
+        display:block;
+    }
+        */
+    </style>
+</head>
+<body>
+    <ul id="block">
+        <li><a href="index.html">Index</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="book.html">Book</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="display.html">Display</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="box.html">Box</a></li>&nbsp;&nbsp;&nbsp;
+    </ul>
+
+    <ul id="menu">
+    <li>회사소개 ㅣ</li>
+    <li>제품소개 ㅣ</li>
+    <li>공지사항 ㅣ</li>
+    <li>업무제휴 ㅣ</li>
+    <li>고객센터 </li>
+    </ul>
+
+
+    <h2>인라인과 블록</h2>
+
+    <h3>1. 인라인 요소</h3>
+    <span>텍스트1</span>
+    <span>텍스트2</span>
+    <span>텍스트3</span>
+    <img src="bug1.jpg">
+    <img src="bug2.jpg">
+
+    <h3>2. 블록 요소</h3>
+    <p>이것은 단락입니다.</p>
+    <div>박스 1</div>
+    <div>박스 2</div>
+
+    <p>수직 방향 메뉴 :</p>
+    <a href="htttp://naver.com" target="_blank">네이버</a>
+    <a href="http://daum.net" target="_blank">다음</a>
+    <a href="http://google.com" target="_blank">구글</a>
+</body>
+</html>
