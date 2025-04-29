@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        ul {
+            list-style-type:none;
+            display:inline-block;
+            margin:0px 0 0 0px;
+        }
+        .block {
+            width:500px;
+            padding:10px;
+            margin:20px 0 0 40px;
+            background-color:#eeeeee;
+            border:solid 1px #aaaaaa;
+            text-align:center;
+        }
+        .block li {
+            display:inline;
+        }
+        a:link {
+        color:#000000;
+        text-decoration:none;
+        }
+        a:visited {
+        color:#00ff00;
+        }
+        a:hover {
+        color:#ff0000;
+        font-weight:bold;
+        text-decoration:underline;
+        }
+        a:active {
+        color:#00ffff;
+        }
+        .subject {
+        font-weight:bold;
+        padding-bottom:5px;
+        }
+        .comment {
+        color:#ff0000;
+        }
+        #introduce {
+            width:750px;
+            padding-bottom:5px;
+            border-bottom:solid 1px #cccccc; 
+        }
+        .price {
+            width:300px;
+            padding-top:5px;
+            border-top:solid 1px #cccccc;
+        }
+
+        #top li {
+            margin-top:5px;
+            display:inline;
+        }
+        #map {
+            width:400px;
+            margin:20px;
+            padding:10px;
+            border:solid 1px #bcd3be;
+            background-color:#f6fdf7;
+        }
+        #traffic li {
+            list-style-image:url("but.jpg");
+            margin:0px;
+                                    
+        }
+        .menu {
+            text-align:center;
+            margin:10px;
+        }
+        .won {
+            border-top-left-radius:15px;
+            border-bottom-right-radius:15px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="block">
+        <li><a href="index.html">Index</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="book.html">Book</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="display.html">Display</a></li>&nbsp;&nbsp;&nbsp;
+        <li><a href="box.html">Box</a></li>&nbsp;&nbsp;&nbsp;
+    </ul>
+<br><br><br><br><br>
+    <ul id="top">
+        <li>음식점 소개 ㅣ</li>
+        <li>캘리캘리 ㅣ</li>
+        <li>공지사항 ㅣ</li>
+        <li>찾아오시는 길 ㅣ</li>
+        <li>메뉴 ㅣ</li>
+        
+    </ul>
+
+    <div>
+        <img src="restaurant.jpg" width="800" height="500">
+    </div>
+
+    <h1 id="introduce">+ 캘리캘리</h1>
+
+    <h2>1. 공지사항</h2>
+    <ul id="map">
+        <li>운영 시간 : 매일 11:00 - 21:00</li>
+        <li>위치 : 대전 중구 대종로501번길 9 1층</li>
+        <li>전화번호 : 0507-1496-0405</li>
+    </ul>
+
+    <h2>2. 찾아오시는 길</h2>
+    <ul id="traffic">
+        <li>지하철 : 수인분당선 지하철 이용 -> 수서역 도착</li>
+        <li>기차 : 수서역에서 SRT이용 -> 대전역 도착</li>
+        <li>택시 : 대전역에서 택시 이용</li>
+    </ul>
+
+
+    <h2>3. 메뉴</h2>
+    <ul class="menu">
+        <li><img class="won" src="pizza1.jpg" width="300" height="200"></li>
+        <li class="subject">하바나콘</li>
+        <li class="price">20,000원</li>
+    </ul>
+    <ul class="menu">
+        <li><img class="won" src="stake.jpg" width="300" height="200"></li>
+        <li class="subject">아메리칸 스테이크</li>
+        <li class="price">32,000원</li>
+    </ul>
+    <ul class="menu">
+        <li><img class="won" src="waffle.jpg" width="300" height="200"></li>
+        <li class="subject">치킨와플</li>
+        <li class="price">15,900원</li>
+    </ul>
+    
+</body>
+</html>
