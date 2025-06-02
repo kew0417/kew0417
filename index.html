@@ -3,137 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Document</title>
     <style>
-        ul {
-            list-style-type:none;
-            display:inline-block;
-            margin:0px 0 0 0px;
+        * {
+            box-sizing: border-box;
         }
-        .block {
-            width:500px;
-            padding:10px;
-            margin:20px 0 0 40px;
-            background-color:#eeeeee;
-            border:solid 1px #aaaaaa;
+        header {
+            border-bottom:2px solid black;
             text-align:center;
+            background:white;
+            font-size:50px;
         }
-        .block li {
-            display:inline;
+        
+        nav {
+            display:flex;
+            justify-content:space-around;
+            background-color:skyblue;
+            padding:10px 0;
         }
-        a:link {
-        color:#000000;
-        text-decoration:none;
-        }
-        a:visited {
-        color:#00ff00;
-        }
-        a:hover {
-        color:#ff0000;
-        font-weight:bold;
-        text-decoration:underline;
-        }
-        a:active {
-        color:#00ffff;
-        }
-        .subject {
-        font-weight:bold;
-        padding-bottom:5px;
-        }
-        .comment {
-        color:#ff0000;
-        }
-        #introduce {
-            width:750px;
-            padding-bottom:5px;
-            border-bottom:solid 1px #cccccc; 
-        }
-        .price {
-            width:300px;
-            padding-top:5px;
-            border-top:solid 1px #cccccc;
+        .topnav a {
+            float:left;
+            display:block;
+            color:#f2f2f2;
+            text-align:center;
+            padding:14px 16px;
+            text-decoration:none;
         }
 
-        #top li {
-            margin-top:5px;
-            display:inline;
+        .topnav a:hover {
+            background-color:#ddd;
+            color:black;
         }
-        #map {
-            width:400px;
-            margin:20px;
+        .art1 {
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-top:50px;
+        }
+        article {
+            width:200px;
+            border:1px solid #ccc;
             padding:10px;
-            border:solid 1px #bcd3be;
-            background-color:#f6fdf7;
-        }
-        #traffic li {
-            list-style-image:url("but.jpg");
-            margin:0px;
-                                    
-        }
-        .menu {
             text-align:center;
-            margin:10px;
+            border-radius:10px;
         }
-        .won {
-            border-top-left-radius:15px;
-            border-bottom-right-radius:15px;
+        @media (max-width:600px) {
+            nav {
+                flex-direction:column;
+                align-items:center;
+            }
+
+            article {
+                max-width:90%;
+            }
+        }
+
+        footer {
+            border-top:2px solid black;
+            padding:20px;
+            text-align:center;
+            background-color:#f2f2f2;
+            margin-top:40px;
+        }
+        .title{
+            text-align:center;
+            color:black;
+            text-decoration:none;
         }
     </style>
 </head>
 <body>
-    <ul class="block">
-        <li><a href="index.html">Index</a></li>&nbsp;&nbsp;&nbsp;
-        <li><a href="book.html">Book</a></li>&nbsp;&nbsp;&nbsp;
-        <li><a href="display.html">Display</a></li>&nbsp;&nbsp;&nbsp;
-        <li><a href="box.html">Box</a></li>&nbsp;&nbsp;&nbsp;
-    </ul>
-<br><br><br><br><br>
-    <ul id="top">
-        <li>음식점 소개 ㅣ</li>
-        <li>캘리캘리 ㅣ</li>
-        <li>공지사항 ㅣ</li>
-        <li>찾아오시는 길 ㅣ</li>
-        <li>메뉴 ㅣ</li>
-        
-    </ul>
+    <header>
+    <a class="title" href="index.html"><h1>Routine Maker</h1></a>
+    </header>
 
-    <div>
-        <img src="restaurant.jpg" width="800" height="500">
-    </div>
+    <nav class="topnav">
+        <a href="bulk.html">근비대(벌크업)</a>   
+        <a href="strength.html">스트렝스</a>
+        <a href="diet.html">다이어트</a>
+        <a href="lean.html">근비대(린매스업)</a>
+        <a href="power.html">근비대&스트렝스</a>
+    </nav>
 
-    <h1 id="introduce">+ 캘리캘리</h1>
+    <main>
+        <div class="art1">
+        <article>
+            <h1>근비대(벌크업)</h1>
+            <p>체지방이 늘면서 동시에 근육도 늘어납니다. 단기간에 몸을 키우고 싶으신 분들에게 추천드립니다.</p><br><br><br><br>
+            <img src="img/bulk.jpg" width="150px" height="100px">
+        </article>
 
-    <h2>1. 공지사항</h2>
-    <ul id="map">
-        <li>운영 시간 : 매일 11:00 - 21:00</li>
-        <li>위치 : 대전 중구 대종로501번길 9 1층</li>
-        <li>전화번호 : 0507-1496-0405</li>
-    </ul>
+        <article>
+            <h1>스트렝스</h1>
+            <p>힘을 키우는 것이 주 목적입니다. 몸을 만드는 것 보다 더 강해지는 데에 집중합니
+            집중합니다. 힘을 키우는 것이 목적이신 분들에게 추천드립니다.</p><br><br>
+            <img src="img/power.jpg" width="150px" height="100px">
+            
+        </article>
 
-    <h2>2. 찾아오시는 길</h2>
-    <ul id="traffic">
-        <li>지하철 : 수인분당선 지하철 이용 -> 수서역 도착</li>
-        <li>기차 : 수서역에서 SRT이용 -> 대전역 도착</li>
-        <li>택시 : 대전역에서 택시 이용</li>
-    </ul>
+        <article>
+            <h1>다이어트</h1>
+            <p>체지방을 빼는 것이 주 목적입니다. 근육량을 유지 혹은 최소한으로 손실 하면서 체지방을 빼는 것입니다. 살을 빼고 싶으신 분들에게 추천드립니다.</p><br><br>
+            <img src="img/cut.jpg" width="150px" height="100px">
+        </article>
 
+        <article>
+            <h1>근비대(린매스업)</h1>
+            <p>체지방은 낮은 상태로 유지하면서 몸을 키우는 방식입니다. 벌크업보다 몸을 키우는 속도는 느리지만 체지방이 늘지 않는 장점이 있습니다.
+                낮은 체지방을 유지하고 싶으신 분들에게 추천드립니다.</p>
+                <img src="img/lean.jpg" width="150px" height="100px">
+        </article>
 
-    <h2>3. 메뉴</h2>
-    <ul class="menu">
-        <li><img class="won" src="pizza1.jpg" width="300" height="200"></li>
-        <li class="subject">하바나콘</li>
-        <li class="price">20,000원</li>
-    </ul>
-    <ul class="menu">
-        <li><img class="won" src="stake.jpg" width="300" height="200"></li>
-        <li class="subject">아메리칸 스테이크</li>
-        <li class="price">32,000원</li>
-    </ul>
-    <ul class="menu">
-        <li><img class="won" src="waffle.jpg" width="300" height="200"></li>
-        <li class="subject">치킨와플</li>
-        <li class="price">15,900원</li>
-    </ul>
-    
+        <article>
+            <h1>근비대&스트렝스</h1>
+            <p>몸을 키우면서 힘을 키우는 것이 주 목적입니다. 파워빌딩이라고도 불립니다. 몸도 커지고 싶고 힘도 키우고 싶으신 분들에게 추천드립니다.</p><br><br>
+            <img src="img/pb.jpg" width="150px" height="100px">
+        </article>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p>문의 010-1234-5678 | 개인 정보 방침</p>
+        <p>제작자 : 김은우</p>
+    </footer>
 </body>
 </html>

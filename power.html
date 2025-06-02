@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            border-bottom:2px solid black;
+            text-align:center;
+            padding:20px;
+            font-size:36px;
+        }
+        
+        nav {
+            display:flex;
+            justify-content:space-around;
+            background-color:skyblue;
+            padding:10px 0;
+            flex-wrap:wrap;
+        }
+        .topnav a {
+            float:left;
+            display:block;
+            color:#f2f2f2;
+            text-align:center;
+            padding:14px 16px;
+            text-decoration:none;
+        }
+
+        .topnav a:hover {
+            background-color:#ddd;
+            color:black;
+        }
+        
+        main {
+            padding:30px;
+            text-align:center;
+        }
+        .routine-description {
+            margin-bottom:40px;
+        }
+        .routine-container {
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+        .routine-box {
+            width:20;
+            padding:20px;
+            border:1px solid #ccc;
+            border-radius:10px;
+            
+        }
+        .routine-box ul {
+            list-style-type:none;
+            padding:0;
+            margin:0;
+        }
+        .routine-box li {
+            padding:6px 0;
+            font-size:16px;
+        }
+        @media (max-width:600px) {
+            nav {
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .routine-box {
+                max-width:90%;
+            }
+        }
+
+        footer {
+            border-top:2px solid black;
+            padding:20px;
+            text-align:center;
+            background-color:#f2f2f2;
+            margin-top:40px;
+
+        }
+        .title{
+            text-align:center;
+            color:black;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <a class="title" href="index.html"><h1>근비대&스트렝스</h1></a>
+    </header>
+
+    <nav class="topnav">
+        <a href="bulk.html">근비대(벌크업)</a>   
+        <a href="strength.html">스트렝스</a>
+        <a href="diet.html">다이어트</a>
+        <a href="lean.html">근비대(린매스업)</a>
+        <a href="power.html">근비대&스트렝스</a>
+    </nav>
+
+   <main>
+    <section class="routine-description">
+        <h2>근비대 + 스트렝스 루틴 (파워빌딩)</h2>
+        <p>근비대와 스트렝스를 동시에 잡는 루틴입니다. 흔히 파워빌딩이라 불리며,
+            3대 운동으로 힘을 키우면서, 나머지로 근육을 키우는 혼합형입니다. 보조 운동은 고반복으로 한다.</p>
+    </section>
+
+    <section class="rountine-container">
+        <div class="routine-box">
+            <h3>월</h3>
+            
+            <ul>
+                <li>벤치프레스 중심</li>   
+                <li>가슴/삼두 보조</li>
+            </ul>
+        </div>
+        <div class="routine-box">
+            <h3>화요일</h3>
+            <p></p>
+            <ul>
+                <li>스쿼트 중심</li>
+                <li>하체 보조운동</li>
+            </ul>
+        </div>
+        <div class="routine-box">
+            <h3>목요일</h3>
+            
+            <ul>
+                <li>데드리프트 중심</li>
+                <li>등/이두 보조운동</li>
+                <li>남은 날은 휴식 or 약점 부위 훈련 중 선택하면 된다.</li>
+            </ul>
+        </div>
+    </section>
+   </main>
+
+   <footer>
+        <p>문의 010-1234-5678 | 개인 정보 방침</p>
+        <p>제작자 : 김은우</p>
+    </footer>
+</body>
+</html>
